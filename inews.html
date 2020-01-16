@@ -5,56 +5,57 @@
 	<meta charset="ISO-8859-1"></meta>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 	<link rel="stylesheet" type="text/css" href="css/style.css"></link>
-	<link rel="stylesheet" type="text/css" href="css/style.min.css">
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="js/vmc.simple.slide.min.js"></script>
-	<script type="text/javascript">
-		$(function () {
-			$('#vmc-slide').vmcSimpleSlide();
-		});
-	</script>
 	<style>
-	.box {
-		margin:14px 0px;
-		width:90%;
-		height: 380px;
+	#news-param {
+		font-size:26px;
+		padding:0px 30px;
+		line-height:35px;
+		text-align:left;
 	}
-	.box li {
-		list-style: none;
+	.news-img1 {
+		padding: 5px;
+		max-width:25%;
+		min-width:250px;
+		height:200px;
 	}
-	.box li img{
-		display: none;
+	.news-img2 {
+		width:75%;
+		height:100px;
+		display:block;
+		margin:10px 0px;
 	}
 	</style>
 </head>
 <body>
-
 	<div id="header">
 		<div><img src="img/ruhm-log.jpg" align="center" style="width:120px;" /></div>
 		<div id="nav">
-			<div class="nav-option" style="background-color:rgba(0,255,255,0.5);">Home</div>
+			<a href="index.html"><div class="nav-option">Home</div></a>
 			<a href="about.html"><div class="nav-option">About Us</div></a>
 			<a href="products.html"><div class="nav-option">Products</div></a>
-			<a href="inews.html"><div class="nav-option">News</div></a>
+			<div class="nav-option" style="background-color:rgba(0,255,255,0.5);">News</div>
 			<a href="mentorship.html"><div class="nav-option">Mentorship</div></a>
 			<a href="contact.html"><div class="nav-option">Contact Us</div></a>
 		</div>
 	</div>
-
 	<div id="main-content">
 	<center/>
-	<div class="box" id="vmc-slide">
-	<ul>
-		<li title=""><img src="img/f1.jpg"></li>
-		<li title=""><img src="img/f2.jpg"></li>
-		<li title=""><img src="img/f3.jpg"></li>
-		<li title=""><img src="img/f4.jpg"></li>
-		<li title=""><img src="img/f5.jpg"></li>
-	</ul>
-	</div>
+		<p id="news-param">
+			Happy to share that we are decleared as winners of <strong style="color:red;">ELEVATE 2019</strong>. It was an immense pleasure and a great honor to receive 
+			the award from Sri T Bhaskar Chief Secretary Govt. of Karnataka and Dr. Gaurav Gupta Secretary of ITBT Govt. of Karnataka.
+		</p>
+		<div>
+			<img src="img/f16.jpg" alt="" class="news-img1"/>
+			<img src="img/f17.jpg" alt="" class="news-img1"/>
+			<img src="img/f18.jpg" alt="" class="news-img1"/>
+		</div>
+		<div>
+			<img src="img/f19.jpg" alt="" class="news-img2"/>
+			<img src="img/f20.jpg" alt="" class="news-img2"/>
+		</div>
 	</div>
 	
-	<table cellpadding=0 cellspacing=0 id="footer">
+	<table  width=100% cellpadding=0 cellspacing=0 id="footer">
 		<tr>
 			<td width=50% align="left">
 				Ruhm Innovation Pvt. Ltd<br/>

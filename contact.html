@@ -5,25 +5,19 @@
 	<meta charset="ISO-8859-1"></meta>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 	<link rel="stylesheet" type="text/css" href="css/style.css"></link>
-	<link rel="stylesheet" type="text/css" href="css/style.min.css">
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="js/vmc.simple.slide.min.js"></script>
-	<script type="text/javascript">
-		$(function () {
-			$('#vmc-slide').vmcSimpleSlide();
-		});
-	</script>
 	<style>
-	.box {
-		margin:14px 0px;
-		width:90%;
-		height: 380px;
+	#contact {
+		margin-bottom: 22px;
+		padding: 3%;
+		text-align: left;
 	}
-	.box li {
-		list-style: none;
+	#contact-header {
+		font-size: 35px;
+		font-weight: bold;
+		margin-bottom: 20px;
 	}
-	.box li img{
-		display: none;
+	#contact-addr {
+		font-size:24px;
 	}
 	</style>
 </head>
@@ -32,29 +26,36 @@
 	<div id="header">
 		<div><img src="img/ruhm-log.jpg" align="center" style="width:120px;" /></div>
 		<div id="nav">
-			<div class="nav-option" style="background-color:rgba(0,255,255,0.5);">Home</div>
+			<a href="contact.html"><div class="nav-option">Home</div></a>
 			<a href="about.html"><div class="nav-option">About Us</div></a>
 			<a href="products.html"><div class="nav-option">Products</div></a>
 			<a href="inews.html"><div class="nav-option">News</div></a>
 			<a href="mentorship.html"><div class="nav-option">Mentorship</div></a>
-			<a href="contact.html"><div class="nav-option">Contact Us</div></a>
+			<div class="nav-option" style="background-color:rgba(0,255,255,0.5);">Contact Us</div>
 		</div>
 	</div>
 
 	<div id="main-content">
 	<center/>
-	<div class="box" id="vmc-slide">
-	<ul>
-		<li title=""><img src="img/f1.jpg"></li>
-		<li title=""><img src="img/f2.jpg"></li>
-		<li title=""><img src="img/f3.jpg"></li>
-		<li title=""><img src="img/f4.jpg"></li>
-		<li title=""><img src="img/f5.jpg"></li>
-	</ul>
+	<div id="contact">
+		<div id="contact-header">Ruhm Innovation Pvt. Ltd</div>
+		<div id="contact-addr">
+			Corporate Office :<br/><br/>
+			
+			<img align="center" src="img/location-icon.png" width="30px" />
+			SIT Incubation, Tumakuru<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Siddaganga Technology Business Incubator)<br/><br/>
+
+			<img align="center" src="img/phone-icon.png" width="30px" />
+			+91 9008335541 / +91 8073581057<br/><br/>
+			
+			<img align="center" src="img/email-icon.png" width="30px" />
+			ruhminnovaction@gmail.com
+		</div>
 	</div>
 	</div>
 	
-	<table cellpadding=0 cellspacing=0 id="footer">
+	<table  width=100% cellpadding=0 cellspacing=0 id="footer">
 		<tr>
 			<td width=50% align="left">
 				Ruhm Innovation Pvt. Ltd<br/>
