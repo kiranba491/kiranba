@@ -11,65 +11,214 @@
 	<script type="text/javascript">
 		$(function () {
 			$('#vmc-slide').vmcSimpleSlide();
-		});
+
+		$(window).scroll(function(){
+			var scrollTop = $(this).scrollTop();
+			$("#scrollvalue").html(scrollTop)
+			if(scrollTop >= 0 && scrollTop < 1078) {
+				$('#nav-main').css("color","orange").css("transition","0.3s ease-in-out ");
+			} else {
+				$('#nav-main').css("color","gray").css("transition","0.3s ease-in-out ");
+			}
+			if(scrollTop >= 1078 && scrollTop < 1709){
+				$('#nav-product').css("color","orange").css("transition","0.3s ease-in-out ");
+			} else {
+				$('#nav-product').css("color","gray").css("transition","0.3s ease-in-out ");
+			}
+			if(scrollTop >= 1709 && scrollTop < 2401){
+				$('#nav-news').css("color","orange").css("transition","0.3s ease-in-out ");
+			} else {
+				$('#nav-news').css("color","gray").css("transition","0.3s ease-in-out ");
+			}
+			if(scrollTop >= 2401 && scrollTop < 2971){
+				$('#nav-mentorship').css("color","orange").css("transition","0.3s ease-in-out ");
+			} else {
+				$('#nav-mentorship').css("color","gray").css("transition","0.3s ease-in-out ");
+			}
+			if(scrollTop >= 2971 && scrollTop < 3599){
+				$('#nav-about').css("color","orange").css("transition","0.3s ease-in-out ");
+			} else {
+				$('#nav-about').css("color","gray").css("transition","0.3s ease-in-out ");
+			}
+			if(scrollTop >= 3599){
+				$('#nav-contact').css("color","orange").css("transition","0.3s ease-in-out ");
+			} else {
+				$('#nav-contact').css("color","gray").css("transition","0.3s ease-in-out ");
+			}
+		});  
+	});
 	</script>
-	<style>
-	.box {
-		margin:14px 0px;
-		width:90%;
-		height: 380px;
-	}
-	.box li {
-		list-style: none;
-	}
-	.box li img{
-		display: none;
-	}
-	</style>
 </head>
 <body>
 
-	<div id="header">
-		<div><img src="img/ruhm-log.jpg" align="center" style="width:120px;" /></div>
-		<div id="nav">
-			<div class="nav-option" style="background-color:rgba(0,255,255,0.5);">Home</div>
-			<a href="about.html"><div class="nav-option">About Us</div></a>
-			<a href="products.html"><div class="nav-option">Products</div></a>
-			<a href="inews.html"><div class="nav-option">News</div></a>
-			<a href="mentorship.html"><div class="nav-option">Mentorship</div></a>
-			<a href="contact.html"><div class="nav-option">Contact Us</div></a>
+	<header>
+		<img src="img/rhum-log.jpg" style="width:120px;" />
+		<div id="nav" style="display:inline-block;float:right;">
+			<div class="nav-option"><a id="nav-main" href="#main" style="color:orange;">Home</a></div>
+			<div class="nav-option"><a id="nav-product" href="#product">Products</a></div>
+			<div class="nav-option"><a id="nav-news" href="#news">News</a></div>
+			<div class="nav-option"><a id="nav-mentorship" href="#mentorship">Mentorship</a></div>
+			<div class="nav-option"><a id="nav-about" href="#about">About Us</a></div>
+			<div class="nav-option"><a id="nav-contact" href="#contact">Contact Us</a></div>
+		</div>
+	</header>
+
+	<div id="main">
+		<div class="box" id="vmc-slide">
+			<ul>
+				<li title=""><img src="img/f1.jpg"></li>
+				<li title=""><img src="img/f2.jpg"></li>
+				<li title=""><img src="img/f3.jpg"></li>
+				<li title=""><img src="img/f4.jpg"></li>
+				<li title=""><img src="img/f5.jpg"></li>
+			</ul>
+		</div>
+		<div style="height:450px;width:100%;display:table;">
+			<div style="padding:50px 50px;display:table-cell;height:100%;width:50%;">
+				<h1 style="font:40px cursive;color:orange;">What we are doing?</h1>
+				<div style="font:23px cursive;line-height:35px;">
+				Ruhm Innovation Pvt Ltd a social organisation having a vision of solving an agriculture cause 
+				at the rate of innovation through technolog at a minimum cost. We offer three products and services at
+				the current scenario for the different segments in agriculture like aqua-culture, live-stock health management, 
+				Animal Monitoring Systems and Climate Controlled Devices and Farm Land Security from external factors.
+				</div>
+			</div>
+			<div style="display:table-cell;height:100%;width:50%;vertical-align:middle;text-align:center;">
+				<img src="https://www.yogiyogagod.com/wp-content/uploads/2018/12/Dr-shivakumara-swamiji-Biography-Siddaganga-Mutt-Tumkur.jpg"
+				style="border-radius:50%;border:1px solid #999;"/>
+			</div>
+		</div>
+	</div>
+	
+	<div style="font-family:sans-serif;" id="product">
+		<h1 style="padding:0px 50px;color:orange;">Products</h1>
+		<h2 style="padding:0px 50px;color:green;">RAS 2.0 Hardware Device</h2>
+		<div align="center">
+			<img src="img/f13.jpg" alt="" class="product-img1"/>
+			<img src="img/f14.jpg" alt="" class="product-img1"/>
+			<img src="img/f15.jpg" alt="" class="product-img1"/>
+		</div>
+		<div id="product-param">
+			<ul>
+				<li>
+					A Unique Platform to Manage a Customers.<br/><br/>
+				</li>
+				<li>
+					RUHM Automation System, Smart Monitoring which helps you to monitor temperautre and Humidity remotely
+					and to analyse daily variations. You will get notified if the range goes above or below threshold.
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="news" style="font-family:sans-serif;">
+		<h1 style="padding:0px 50px;color:orange;">News</h1>
+		<p id="news-param">
+			Happy to share that we are decleared as winners of <strong style="color:red;">ELEVATE 2019</strong>. It was an immense pleasure and a great honor to receive 
+			the award from Sri T Bhaskar Chief Secretary Govt. of Karnataka and Dr. Gaurav Gupta Secretary of ITBT Govt. of Karnataka.
+		</p>
+		<div align="center">
+			<img src="img/f16.jpg" alt="" class="news-img1"/>
+			<img src="img/f17.jpg" alt="" class="news-img1"/>
+			<img src="img/f18.jpg" alt="" class="news-img1"/>
+		</div>
+		<div align="center">
+			<img src="img/f19.jpg" alt="" class="news-img2"/>
+			<img src="img/f20.jpg" alt="" class="news-img2"/>
 		</div>
 	</div>
 
-	<div id="main-content">
-	<center/>
-	<div class="box" id="vmc-slide">
-	<ul>
-		<li title=""><img src="img/f1.jpg"></li>
-		<li title=""><img src="img/f2.jpg"></li>
-		<li title=""><img src="img/f3.jpg"></li>
-		<li title=""><img src="img/f4.jpg"></li>
-		<li title=""><img src="img/f5.jpg"></li>
-	</ul>
+	<div id="mentorship">
+		<h1 style="padding:0px 50px;color:orange;">Mentorship</h1>
+		<div align="center">
+			<img src="img/f21.jpg" alt="" class="men-img"/>
+			<img src="img/f22.jpg" alt="" class="men-img"/>
+			<img src="img/f23.jpg" alt="" class="men-img"/>
+			<img src="img/f24.jpg" alt="" class="men-img"/>
+		
+			<img src="img/f25.jpg" alt="" class="men-img"/>
+			<img src="img/f26.jpg" alt="" class="men-img"/>
+			<img src="img/f27.jpg" alt="" class="men-img"/>
+			<img src="img/f28.jpg" alt="" class="men-img"/>
+		</div>
 	</div>
+
+	<div id="about">
+		<h1 style="padding:0px 50px;color:orange;">About Us</h1>
+		<div style="padding:0 50;">
+		<div style="text-align:left;font-size:24px;">
+			Ruhm Innovation is a company, having mission make monitoring easy and provide real time insights with
+			real time data.
+			Ruhm Innovation is to implement technologies like AI, IOT in farming to increase yield of farmars and
+			reduce the labour costs.
+		</div>
+			
+		<table cellspacing=10 cellpadding=4 width=100% style="margin:28px 0px;text-align:left;color:green;">
+		<tr>
+		<td  bgcolor="green"></td>
+		<td width=50%>
+			<div style="font-size:30px;font-weight:bold;">Vision</div>
+			<div style="text-align:left;font-size:27px;">
+				&#8220; Provide a comfort for life by using Automation and Technology. &#8221;
+			</div>
+		</td>
+		<td  bgcolor="green"></td>
+		<td width=50%>
+			<div style="font-size:30px;font-weight:bold;">Mission</div>
+			<div style="text-align:left;font-size:27px;">
+				&#8220; Develop the devices for Remote monitoring and Automation using Technology. &#8221;
+			</div>
+		</td></tr>
+		</table>
+			
+		<div align="center" id="team">
+			<div id="team-header">Our Team</div>
+			<div class="team-img"><img src="img/f6.jpg" alt=""/><br/><span>Shreevathsa KN</span></div>
+			<div class="team-img"><img src="img/f7.jpg" alt=""/><br/><span>Chinmay NM</span></div>
+			<div class="team-img"><img src="img/f8.jpg" alt=""/><br/><span>Kumarswamy HS</span></div>
+			<div class="team-img"><img src="img/f9.jpg" alt=""/><br/><span>Kiran BA</span></div>
+			<div class="team-img"><img src="img/f10.jpg" alt=""/><br/><span>Kanishka Naik</span></div>
+			<div class="team-img"><img src="img/f11.jpg" alt=""/><br/><span>Gangadhar Shetty</span></div>
+			<div class="team-img"><img src="img/f12.jpg" alt=""/><br/><span>Dhanush KA</span></div><br/>
+		</div>
+		</div>
+	</div>
+
+	<div id="contact">
+		<h1 style="padding:0px 50px;color:orange;">Contact Us</h1>
+	
+		<div id="contact-header">Ruhm Innovation Pvt. Ltd</div>
+		<div id="contact-addr">
+			Corporate Office :<br/><br/>
+			
+			<img align="center" src="img/location-icon.png" width="30px" />
+			SIT Incubation, Tumakuru<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Siddaganga Technology Business Incubator)<br/><br/>
+
+			<img align="center" src="img/phone-icon.png" width="30px" />
+			+91 9008335541 / +91 8073581057<br/><br/>
+			
+			<img align="center" src="img/email-icon.png" width="30px" />
+			ruhminnovaction@gmail.com
+		</div>
 	</div>
 	
-	<table cellpadding=0 cellspacing=0 id="footer">
-		<tr>
-			<td width=50% align="left">
-				Ruhm Innovation Pvt. Ltd<br/>
-				Corporate Office :<br/>
-				<img align="center" src="img/location-icon.png" width="25px" />
-				SIT Incubation, Tumakuru<br/>
-				<img align="center" src="img/phone-icon.png" width="25px" />
-				+91 9008335541 / +91 8073581057
-			</td>
-			<td width=50% align="right">
-				Privacy Policy | User Agreement<br/>
-				&#9400; 2020 Ruhm Innovation Pvt. Ltd<br/>
-				Powered by : Ruhm Innovation Pvt. Ltd<br/>
-			</td>
-		</tr>
-	</table>
+	<div id="footer">
+		<div style="width:350px;color:#222222;">
+		<div width=100px style="border-bottom:1px solid;padding:10px;">
+			Ruhm Innovation Pvt. Ltd<br/>
+			Corporate Office :<br/>
+			<img align="center" src="img/location-icon.png" width="25px" />
+			SIT Incubation, Tumakuru<br/>
+			<img align="center" src="img/phone-icon.png" width="25px" />
+			+91 9008335541 / +91 8073581057
+		</div>
+		<div style="padding:10px;">
+			Privacy Policy | User Agreement<br/>
+			&#9400; 2020 Ruhm Innovation Pvt. Ltd<br/>
+			Powered by : Ruhm Innovation Pvt. Ltd<br/>
+		</div>
+		</div>
+	</div>
 </body>
 </html>
